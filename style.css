@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background: #0d6efd;
+    background: #101112;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -89,27 +89,187 @@ ul li {
     background: #004bb5;
 }
 
-/* Footer */
+/* General Footer Styles */
 footer {
-    text-align: center;
-    padding: 10px;
-    background: #0d6efd;
+    background-color: #222;
     color: #fff;
-    font-size: 0.9em;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 30px;
+    font-size: 14px;
+    line-height: 1.6;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    section {
-        padding: 20px 5%;
+/* Contact Form Section */
+.contact-form-container {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.contact-form-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.contact-form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form-container label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.contact-form-container input,
+.contact-form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: inherit;
+}
+
+.contact-form-container input:focus,
+.contact-form-container textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.contact-form-container textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+.contact-form-container button {
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form-container button:hover {
+    background-color: #0056b3;
+}
+
+/* Error and Success Message Styling */
+.contact-form-container .message {
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.contact-form-container .message.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.contact-form-container .message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+
+/* Links in Footer */
+footer a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #00bfff;
+    text-decoration: underline;
+}
+
+/* Social Media Icons */
+footer .social-icons {
+    margin: 15px 0;
+}
+
+footer .social-icons a {
+    margin: 0 10px;
+    font-size: 24px;
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+footer .social-icons a:hover {
+    color: #00bfff;
+}
+
+/* Download CV Button */
+.download-cv {
+    display: inline-block;
+    padding: 12px 18px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.download-cv:hover {
+    background-color: #0056b3;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Copyright Text */
+footer p:last-child {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #aaa;
+}
+/* Social Media Icons - Top Right */
+.social-icons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #333; /* Default icon color */
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #007bff; /* Change to your theme color on hover */
+}
+@media (max-width: 600px) {
+    .footer {
+        flex-direction: column; /* Stack content vertically */
+        text-align: center; /* Center text and links */
     }
 
-    header h1 {
-        font-size: 2em;
-    }
-
-    nav a {
-        margin: 0 10px;
-        font-size: 1em;
+    .footer .footer-links {
+        justify-content: center; /* Center links */
+        gap: 10px; /* Reduce gap */
+        margin-top: 10px;
     }
 }
