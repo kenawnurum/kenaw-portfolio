@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kenaw Nuru - Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
@@ -17,7 +18,7 @@
         <a href="#education">Education</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <a href="#contact-form">Contact Me</a>
     </nav>
     <section id="about" class="about">
         <h2>About Me</h2>
@@ -57,22 +58,49 @@
     <section id="projects" class="projects">
         <h2>Projects</h2>
         <ul>
-            <li><strong>Password based door lock system using 8051 micro controller:</strong> Develop embeded c programing integrated with 8051 micro controller</li>
-            <li><strong>E_farming website and Hotel managment website</strong> Designed and developed responsive e-farming and hotel managment website using HTML,CSS,React js and PostgresSQL</li>
-            <li><strong>Alzheimer's disease detection using deep learning:</strong>  Utilized a deep learning model to classify MRI scans and achieved 88% accuracy in detecting Alzheimer's disease..</li>
-            <li><strong>Created a personal portfolio website to showcase my achievements</strong></li>
+            <li><strong>Password based door lock system using 8051 micro controller:</strong> Developed embedded C programming integrated with 8051 microcontroller.</li>
+            <li><strong>E-farming website and Hotel management website</strong>: Designed and developed responsive websites using HTML, CSS, React.js, and PostgreSQL.</li>
+            <li><strong>Alzheimer's disease detection using deep learning:</strong> Utilized a deep learning model to classify MRI scans and achieved 88% accuracy in detecting Alzheimer's disease.</li>
+            <li><strong>Created a personal portfolio website to showcase my achievements.</strong></li>
         </ul>
     </section>
-    <section id="contact" class="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:kenawnuru@gmail.com">kenawnuru@gmail.com</a></p>
-        <p>Phone: 8122687509</p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/kenawnuru" target="_blank">linkedin.com/in/kenawnuru</a></p>
+    <section id="contact-form" class="contact-form">
+        <h2>Contact Me</h2>
+        <form action="https://formspree.io/f/{https://formspree.io/f/xrbgvvgl}" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="_replyto" required><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+
+            <button type="submit">Submit</button>
+        </form>
     </section>
     <button id="back-to-top" title="Back to Top">&uarr;</button>
     <footer>
+        <p>Contact Information</p>
+        <p>Email: <a href="mailto:kenawnuru@gmail.com">kenawnuru@gmail.com</a></p>
+        <p>Phone: 8122687509</p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/kenawnuru" target="_blank">linkedin.com/in/kenawnuru</a></p>
+
+        <!-- Social Media Icons -->
+        <div class="social-icons">
+            <a href="https://facebook.com/your-profile" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://linkedin.com/in/kenawnuru" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://instagram.com/your-profile" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://youtube.com/your-channel" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://github.com/your-profile" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/your-profile" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+
+        <!-- Download CV -->
+        <a href="ResumeCV.pdf" download="Kenaw_Nuru_CV" class="download-cv">Download CV</a>
+
         <p>&copy; 2024 Kenaw Nuru. All rights reserved.</p>
     </footer>
-    <script src="script.js"></script>
+   <script src="script.js"></script>
 </body>
 </html>
